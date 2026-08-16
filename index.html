@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSLSA AI Legal Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for standard icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="logo-area">
+                <div class="emblem-placeholder">🏛️</div>
+                <div class="header-text">
+                    <h2>Sikkim State Legal Services Authority</h2>
+                    <span>Nyaya Mitra - AI Legal Assistant</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Warning Disclaimer -->
+        <div class="disclaimer-banner">
+            <i class="fas fa-shield-halved"></i>
+            <p>Confidentiality Notice: This AI assistant provides general legal guidance under the LSA Act, 1987. Do not share sensitive personal information or bank details here.</p>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <div class="avatar"><i class="fas fa-scale-balanced"></i></div>
+                <div class="text">
+                    Namaskar. Welcome to the official AI Assistant of the Sikkim State Legal Services Authority (SSLSA). How may I assist you today with free legal aid, Lok Adalats, or victim compensation schemes?
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your legal query here..." autocomplete="off">
+            <button id="send-btn" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
